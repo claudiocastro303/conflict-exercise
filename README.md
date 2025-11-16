@@ -23,7 +23,7 @@ Sistema CRUD completo para gestión de vehículos y sus seguros asociados. Desar
 ## Configuración de Base de Datos
 
 ### 1. Crear base de datos y tablas
-Ejecutar en MySQL Workbench o línea de comandos:
+Ejecutar en MySQL Workbench las líneas de comandos:
 ```sql
 -- Crear estructura
 SOURCE database/database_schema.sql
@@ -33,9 +33,9 @@ SOURCE database/sample_data.sql
 
 ```
 
-### Configuración y Flujo de Uso
+###   Configuración y Flujo de Uso
 
-## Credenciales de Prueba
+### Credenciales de Prueba
 Editar en `src/Config/DatabaseConnection.java`:
 ```java
 URL: jdbc:mysql://localhost:3306/vehiculo_seguro
@@ -43,13 +43,13 @@ USER: root
 PASSWORD: [tu_password_mysql]
 
 ````
-### Compilación y Ejecución
+## Compilación y Ejecución
 
-## Compilar:
+###  Compilar :
 ```bash
 javac -cp .:mysql-connector-java-8.0.33.jar src/Main/Main.java
 ````
-## Ejecutar
+### Ejecutar
 ````bash
 java -cp .:mysql-connector-java-8.0.33.jar Main.Main
 ````
@@ -60,3 +60,6 @@ java -cp .:mysql-connector-java-8.0.33.jar Main.Main
 4. **Actualizar** - Modificar datos de vehículo y seguro
 5. **Eliminar** - Eliminación lógica (no física)
 6. **Listar Seguros** - Ver todas las pólizas
+
+## Video Demostración
+[Ver video en Google Drive](https://drive.google.com/file/d/ID_DEL_VIDEO/view)
