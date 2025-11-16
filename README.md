@@ -10,7 +10,7 @@ Sistema CRUD completo para gestión de vehículos y sus seguros asociados. Desar
 ## Funcionalidades principales:
 - Gestión de vehículos (alta, baja, modificación, consulta)
 - Administración de pólizas de seguro
-- Relación opcional vehículo-seguro
+- Relación vehículo-seguro
 - Eliminación lógica de registros
 - Búsqueda por dominio y marca
 
@@ -33,9 +33,9 @@ SOURCE database/sample_data.sql
 
 ```
 
-## Configuración y Flujo de Uso
+### Configuración y Flujo de Uso
 
-### Credenciales de Prueba
+## Credenciales de Prueba
 Editar en `src/Config/DatabaseConnection.java`:
 ```java
 URL: jdbc:mysql://localhost:3306/vehiculo_seguro
@@ -50,7 +50,7 @@ PASSWORD: [tu_password_mysql]
 javac -cp .:mysql-connector-java-8.0.33.jar src/Main/Main.java
 ````
 ## Ejecutar
-````
+````bash
 java -cp .:mysql-connector-java-8.0.33.jar Main.Main
 ````
 ### Flujo de Trabajo
