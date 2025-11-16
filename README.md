@@ -31,10 +31,13 @@ SOURCE database/database_schema.sql
 -- Insertar datos de prueba
 SOURCE database/sample_data.sql
 
-## Configuración de Base de Datos
 
-## 2. Credenciales por defecto
+```
+
+### 2. Credenciales por defecto
+Rjecutar en MySQL Workbench
 ```java
 URL: jdbc:mysql://localhost:3306/vehiculo_seguro
 USER: root
 PASSWORD: [tu_password_mysql]
+``` 
