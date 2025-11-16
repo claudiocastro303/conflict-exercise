@@ -30,3 +30,10 @@ SOURCE database/database_schema.sql
 
 -- Insertar datos de prueba
 SOURCE database/sample_data.sql
+
+
+## 2. Credenciales por defecto
+```java
+URL: jdbc:mysql://localhost:3306/vehiculo_seguro
+USER: root
+PASSWORD: [tu_password_mysql]
