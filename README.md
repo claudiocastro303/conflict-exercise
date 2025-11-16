@@ -31,13 +31,32 @@ SOURCE database/database_schema.sql
 -- Insertar datos de prueba
 SOURCE database/sample_data.sql
 
-
 ```
 
-### 2. Credenciales por defecto
-Rjecutar en MySQL Workbench
+## Configuración y Flujo de Uso
+
+### Credenciales de Prueba
+Editar en `src/Config/DatabaseConnection.java`:
 ```java
 URL: jdbc:mysql://localhost:3306/vehiculo_seguro
 USER: root
 PASSWORD: [tu_password_mysql]
-``` 
+
+````
+### Compilación y Ejecución
+
+## Compilar:
+```bash
+javac -cp .:mysql-connector-java-8.0.33.jar src/Main/Main.java
+````
+## Ejecutar
+````
+java -cp .:mysql-connector-java-8.0.33.jar Main.Main
+````
+### Flujo de Trabajo
+1. **Menú Principal** - 5 opciones disponibles
+2. **Crear Vehículo** - Con o sin seguro, opcional  
+3. **Listar Vehículos** - Todos o filtrados por dominio/marca
+4. **Actualizar** - Modificar datos de vehículo y seguro
+5. **Eliminar** - Eliminación lógica (no física)
+6. **Listar Seguros** - Ver todas las pólizas
